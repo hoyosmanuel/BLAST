@@ -1,0 +1,17 @@
+cd /lustre/scratch/mhoyosro && mkdir blast_seq
+cp -r /lustre/work/daray/bat_genomes/bat1k /lustre/scratch/mhoyosro/blast_seq
+mv /lustre/scratch/mhoyosro/blast_seq/bat1k/* ../
+rm -rv bat1k
+cd ..
+chmod -R 755 blast_seq/*
+cd blast_seq
+rm -rv list.txt 
+rm -rv stats.txt
+cd..
+gunzip blast_seq/*
+cd blast_seq
+rm -rv twoBitToFa
+rm -rv *2bit
+rm -rv mRhiMus.mito.20220823.fasta
+cd ..
+mkdir blast_database
