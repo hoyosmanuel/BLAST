@@ -1,0 +1,6 @@
+mkdir /lustre/work/<eraider>/software/blast
+. /home/<eraider>/conda/etc/profile.d/conda.sh
+conda activate 
+conda create --name blast
+conda activate blast
+conda install -c bioconda blast
